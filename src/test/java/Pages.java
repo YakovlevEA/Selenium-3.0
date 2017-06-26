@@ -5,10 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
-
 import java.util.concurrent.TimeUnit;
-
 import static org.junit.Assert.assertTrue;
 
 public class Pages {
@@ -36,7 +33,7 @@ public class Pages {
 
         String[] colorM = priceMain.getCssValue("color").split("(\\()|(, )|(\\))");;
         String[] colorSaleM = salePriceMain.getCssValue("color").split("(\\()|(, )|(\\))");
-        System.out.println(priceMain.getCssValue("color")+"  "+colorM[0] +"  " +colorM[1] +"  "+ colorM[2]+"  " +colorM[3]);
+
         int fontSizeM = Integer.parseInt(priceMain.getAttribute("offsetHeight"));
         int fontSizeSaleM = Integer.parseInt(salePriceMain.getAttribute("offsetHeight"));
 
